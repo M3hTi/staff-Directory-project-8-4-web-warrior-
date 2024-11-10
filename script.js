@@ -17,7 +17,8 @@ function getFile() {
             // console.log(fileContent);
             const informations = JSON.parse(fileContent);
             // console.log(informations);
-            const directory = informations.directory
+            // NOTE:  Get the first property of the object, regardless of its name
+            const directory = informations[Object.keys(informations)[0]];
             for (const info of directory) {
                 // console.log(info);
                 const trElement = document.createElement("tr");
