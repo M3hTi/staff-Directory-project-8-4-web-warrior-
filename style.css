@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFF7C0;
+}
+
+.header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Updated table styles */
+.container {
+    overflow-x: auto; /* Allows horizontal scroll if needed */
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #A0A0A0;
+}
+
+tbody {
+    display: block;
+    overflow-y: auto;
+    height: 500px;
+}
+
+thead tr, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Column widths */
+th:nth-child(1), td:nth-child(1) { width: 10%; }  /* id */
+th:nth-child(2), td:nth-child(2) { width: 10%; }  /* firstName */
+th:nth-child(3), td:nth-child(3) { width: 10%; }  /* lastName */
+th:nth-child(4), td:nth-child(4) { width: 20%; }  /* position */
+th:nth-child(5), td:nth-child(5) { width: 15%; }  /* dept */
+th:nth-child(6), td:nth-child(6) { width: 20%; }  /* email */
+th:nth-child(7), td:nth-child(7) { width: 15%; }  /* phone */
+
+tr:nth-child(even) {
+    background-color: #E8F5E9;
+}
+
+tr:nth-child(odd) {
+    background-color: #C8E6C9;
+}
